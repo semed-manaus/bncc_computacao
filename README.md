@@ -1,3 +1,4 @@
+[README.md](https://github.com/user-attachments/files/31894178/README.md)
 # Planeja BNCC Computação
 
 Aplicativo web estático baseado na matriz de integrações entre componentes curriculares e BNCC Computação.
