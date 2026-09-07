@@ -8,16 +8,13 @@
   </head>
   <body>
     <header class="topbar">
-      <a class="brand" href="#inicio" aria-label="Planeja BNCC Computação">
-        <span class="brand-mark">⌘</span>
-        <span>Planeja<span>BNCC</span></span>
-      </a>
+      <a class="brand" href="#inicio" aria-label="Planeja BNCC Computação"><img src="assets/logo-semed.png" alt="SEMED Manaus" /><span>Planeja<span>BNCC</span></span></a>
       <nav aria-label="Navegação principal">
         <a class="active" href="#planejar">Planejar</a>
         <a href="#cobertura">Cobertura</a>
         <a href="#biblioteca">Minhas aulas</a>
       </nav>
-      <button class="button ghost" id="printPlan">Imprimir plano</button>
+      <a class="button ghost" href="#referencias">Referências</a>
     </header>
 
     <main id="inicio">
@@ -33,6 +30,7 @@
           <span>integrações disponíveis<br />na sua matriz</span>
         </div>
       </section>
+      <section class="resource-bar" aria-label="Documentos de referência"><strong>Documentos de referência</strong><a href="https://drive.google.com/file/d/1hlOjo5uVnyFdq-DIZqqt0CK7wFUyDrFc/view?usp=sharing" target="_blank" rel="noopener">BNCC Computação nacional ↗</a><a href="https://drive.google.com/file/d/1VTGOnhfXNG9ZpU8j5hjbcp_eHRaQFXxS/view?usp=sharing" target="_blank" rel="noopener">BNCC Computação SEMED Manaus ↗</a></section>
 
       <section class="workspace" aria-label="Gerador de plano de aula">
         <aside class="filters">
@@ -55,7 +53,7 @@
       <section id="planner" class="planner hidden" aria-live="polite">
         <div class="planner-heading">
           <div class="section-label"><span>03</span><h2>Monte seu plano</h2></div>
-          <p>Personalize a proposta e salve uma versão pronta para a sua turma.</p>
+          <p>Use as propostas específicas da matriz e adapte-as à sua turma.</p>
         </div>
         <div class="plan-controls">
           <label>Tempo disponível<select id="duration"><option>50 minutos</option><option>100 minutos</option><option>2 a 3 aulas</option><option>Projeto de unidade</option></select></label>
@@ -67,7 +65,10 @@
         <article id="planOutput" class="plan-output"></article>
         <div class="plan-actions">
           <button class="button secondary" id="savePlan">Salvar em Minhas aulas</button>
-          <button class="button ghost" id="copyPlan">Copiar texto</button>
+          <button class="button ghost" id="copySummary">Copiar resumo</button>
+          <button class="button ghost" id="copyPrompt">Copiar para IA</button>
+          <a class="button primary" href="https://gemini.google.com/gem/1Fs-MU0gYdGeu6fwbivP3M0n24IW9nuBO?usp=sharing" target="_blank" rel="noopener">Abrir Agente Vertical ↗</a>
+          <button class="button ghost" id="printPlan">Imprimir plano</button>
         </div>
       </section>
 
@@ -80,8 +81,9 @@
         <div class="section-label"><span>04</span><h2>Minhas aulas</h2></div>
         <div id="savedPlans" class="saved-plans"><p class="empty">Os planos que você salvar aparecerão aqui neste navegador.</p></div>
       </section>
+      <section class="references" id="referencias"><p class="eyebrow">REFERÊNCIAS E CRÉDITOS</p><h2>Fontes de apoio ao planejamento</h2><div class="reference-grid"><a href="https://www.computacional.com.br/educacao-basica" target="_blank" rel="noopener"><strong>Computacional</strong><span>Recursos para Educação Básica ↗</span></a><a href="https://basenacionalcomum.mec.gov.br/" target="_blank" rel="noopener"><strong>Base Nacional Comum Curricular</strong><span>Portal oficial da BNCC ↗</span></a></div><p class="credits">Projeto do Mestrado de Ensino de Computação do CESIT-UEA, desenvolvido pelos alunos <strong>Zevaldo Luiz Rodrigues de Sousa, Mirivane Vitor de Paiva e Zaqueu Neves de Souza</strong>, também servidores da SEMED-Manaus.</p></section>
     </main>
-    <footer>Planeja BNCC Computação · Baseado na matriz curricular fornecida</footer>
+    <footer>Planeja BNCC Computação · SEMED Manaus · CESIT-UEA</footer>
     <script src="data.js"></script>
     <script src="app.js"></script>
   </body>
